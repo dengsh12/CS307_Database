@@ -1,5 +1,7 @@
 # CS307 Spring 2021 Database Project 2
 
+(In windows 10)To run my code, please first run cs307.sql in **psql**, then fill in **config.properties**, run the judge file(**ProjectJudge.java**) at last. Strongly recommed you to run it with IDEA, please use **SUSTech-SQL-Project2-Public-master** as IDEA's content root. 
+
 ## 1. Source code
 
 Download link：
