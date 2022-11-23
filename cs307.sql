@@ -1,3 +1,5 @@
+create database project2 with encoding = 'UTF8' lc_collate = 'en_US.UTF8' template = template0;
+\c project2
 create table department
 (
     id   serial primary key,
@@ -52,6 +54,7 @@ create table courseSection
 
 create index idx_courseSection_courseIdAndSemesterId on courseSection(courseId,semesterId);
 
+
 create table courseSectionClass
 (
     id              serial primary key,
@@ -84,3 +87,6 @@ create table studentToCourseSection
     primary key (studentId,courseSectionId)
 );
 create index idx_studentToCourseSection_courseSectionId on studentToCourseSection(courseSectionId);
+
+-- truncate table allUser,course,courseSection,courseSectionClass,courseToMajor,department,major,semester,studentToCourseSection cascade ;
+-- select id,name,credit,classhour,coursegrading from course
